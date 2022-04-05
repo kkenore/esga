@@ -93,7 +93,7 @@ function getOwnershipAssessment(){
     var isBeneficialOwnershipDisclosed = getVal($('input[type=radio][name=is-beneficial-ownership-disclosed]:checked').val());
     var isAGMHeld = getVal($('input[type=radio][name=is-AGM-held]:checked').val());
     var haveDividendPolicies = getVal($('input[type=radio][name=have-dividend-policies]:checked').val());
-    var hasEquitableTreatmentAllShareholders = getVal($('input[type=radio][name=has-equitable-treatment-all-shareholders:checked').val());
+    var hasEquitableTreatmentAllShareholders = getVal($('input[type=radio][name=has-equitable-treatment-all-shareholders]:checked').val());
     var haveClearCommunicationWithShareholders = getVal($('input[type=radio][name=have-clear-communication-with-shareholders]:checked').val());
     var haveDistinctionRolesFounderFamilyManager = getVal($('input[type=radio][name=have-distinction-roles-founder-family-manager]:checked').val());
     var isFamiltySuccessionInPlace = getVal($('input[type=radio][name=is-familty-succession-in-place]:checked').val());
