@@ -43,7 +43,7 @@ function getBoardAssessment(){
 function getControlEnvironmentAssessment(){
     
     var isCashFlowManagementCommunicated = getVal($('input[type=radio][name=is-cash-flow-management-communicated]:checked').val());
-    var isFounderCashBankAcctsSeparated = getVal($('input[type=radio][name=s-founder-cash-bank-accts-separated]:checked').val());
+    var isFounderCashBankAcctsSeparated = getVal($('input[type=radio][name=is-founder-cash-bank-accts-separated]:checked').val());
     var haveEstablishedPolicy = getVal($('input[type=radio][name=have-established-policy]:checked').val());
     var isPrincipleBusinessCommunicated = getVal($('input[type=radio][name=is-principle-business-communicated]:checked').val());
     var haveAccountingPoliciesEstablished = getVal($('input[type=radio][name=have-accounting-policies-established]:checked').val());
@@ -88,24 +88,24 @@ function getTransparencyAndDisclosureAssessment(){
 //Ownership
 function getOwnershipAssessment(){
     
-    var haveShareholderAgreement = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isFounderRoleEstablished = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isBeneficialOwnershipDisclosed = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isAGMHeld = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveDividendPolicies = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var hasEquitableTreatmentAllShareholders = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveClearCommunicationWithShareholders = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveDistinctionRolesFounderFamilyManager = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isFamiltySuccessionInPlace = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveKeyDecisionInAnnualShareholderMeeting = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isRightOfPartnerEstablished = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var havePolicyToRegulateFamilyBenefit = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isShareholderUpdatedOnResults = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveMechanismForResolvingDisputes = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var havePolicyForMinorityShareholder = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isShareholderUnderstandingPolicy = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var isBoardMonitorRiskManagement = getVal($('input[type=radio][name=have-charter]:checked').val());
-    var haveMechanismForAddressingIssues = getVal($('input[type=radio][name=have-charter]:checked').val());
+    var haveShareholderAgreement = getVal($('input[type=radio][name=have-shareholder-agreement]:checked').val());
+    var isFounderRoleEstablished = getVal($('input[type=radio][name=is-founder-role-established]:checked').val());
+    var isBeneficialOwnershipDisclosed = getVal($('input[type=radio][name=is-beneficial-ownership-disclosed]:checked').val());
+    var isAGMHeld = getVal($('input[type=radio][name=is-AGM-held]:checked').val());
+    var haveDividendPolicies = getVal($('input[type=radio][name=have-dividend-policies]:checked').val());
+    var hasEquitableTreatmentAllShareholders = getVal($('input[type=radio][name=has-equitable-treatment-all-shareholders:checked').val());
+    var haveClearCommunicationWithShareholders = getVal($('input[type=radio][name=have-clear-communication-with-shareholders]:checked').val());
+    var haveDistinctionRolesFounderFamilyManager = getVal($('input[type=radio][name=have-distinction-roles-founder-family-manager]:checked').val());
+    var isFamiltySuccessionInPlace = getVal($('input[type=radio][name=is-familty-succession-in-place]:checked').val());
+    var haveKeyDecisionInAnnualShareholderMeeting = getVal($('input[type=radio][name=have-key-decision-in-annual-shareholder-meeting]:checked').val());
+    var isRightOfPartnerEstablished = getVal($('input[type=radio][name=is-right-of-partner-established]:checked').val());
+    var havePolicyToRegulateFamilyBenefit = getVal($('input[type=radio][name=have-policy-to-regulate-family-benefit]:checked').val());
+    var isShareholderUpdatedOnResults = getVal($('input[type=radio][name=is-shareholder-updated-on-results]:checked').val());
+    var haveMechanismForResolvingDisputes = getVal($('input[type=radio][name=have-mechanism-for-resolving-disputes]:checked').val());
+    var havePolicyForMinorityShareholder = getVal($('input[type=radio][name=have-policy-for-minority-shareholder]:checked').val());
+    var isShareholderUnderstandingPolicy = getVal($('input[type=radio][name=is-shareholder-understanding-policy]:checked').val());
+    var isBoardMonitorRiskManagement = getVal($('input[type=radio][name=is-board-monitor-risk-management]:checked').val());
+    var haveMechanismForAddressingIssues = getVal($('input[type=radio][name=have-mechanism-for-addressing-issues]:checked').val());
     
     var ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+isBoardMonitorRiskManagement+haveMechanismForAddressingIssues;
     return ownership;
