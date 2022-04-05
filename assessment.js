@@ -14,7 +14,8 @@ function getCommitmentAssessment(){
     var haveSecretary = getVal($('input[type=radio][name=have-secretary]:checked').val());
     var isReadyForStockExchange = getVal($('input[type=radio][name=is-ready-for-stock-exchange]:checked').val());
     var haveRegularReportToBoard = getVal($('input[type=radio][name=have-regular-report-to-board]:checked').val());
-    commitment=haveCharter+haveListCoreJob+isCoreJobFilled+haveStrategicPlan+haveWrittenApproachCG+haveDesignatedIndividualResponsible+haveSecretary+isReadyForStockExchange+haveRegularReportToBoard;
+	
+    var commitment=haveCharter+haveListCoreJob+isCoreJobFilled+haveStrategicPlan+haveWrittenApproachCG+haveDesignatedIndividualResponsible+haveSecretary+isReadyForStockExchange+haveRegularReportToBoard;
     return commitment;
 }
 //Your Board
@@ -35,7 +36,8 @@ function getBoardAssessment(){
     var isBoardTrainingRegularly = getVal($('input[type=radio][name=is-board-training-regularly]:checked').val());
     var haveBoardUndergoneAnnualPerformance = getVal($('input[type=radio][name=have-board-undergone-annual-performance]:checked').val());
     var haveBoardApprovedSuccessionPlanning = getVal($('input[type=radio][name=have-board-approved-succession-planning]:checked').val());
-    board = haveFoundersConsultedForDecision+haveEngagedExternalAdvisers+haveStrategicInput+haveFormalizedDelegatedSigningAuthority+haveBusinessContinuityPlan+haveEngagedWithOtherExecutives+haveSuccessionPlan+haveFormalBoard+isBoardMemberClearOnRoles+haveScheduledMeetings+haveIndependentMemberInBoard+isBoardMeetingRegularly+isBoardTrainingRegularly+haveBoardUndergoneAnnualPerformance+haveBoardApprovedSuccessionPlanning;
+    
+    var board = haveFoundersConsultedForDecision+haveEngagedExternalAdvisers+haveStrategicInput+haveFormalizedDelegatedSigningAuthority+haveBusinessContinuityPlan+haveEngagedWithOtherExecutives+haveSuccessionPlan+haveFormalBoard+isBoardMemberClearOnRoles+haveScheduledMeetings+haveIndependentMemberInBoard+isBoardMeetingRegularly+isBoardTrainingRegularly+haveBoardUndergoneAnnualPerformance+haveBoardApprovedSuccessionPlanning;
     return board;
 }
 //Control environment
@@ -59,7 +61,8 @@ function getControlEnvironmentAssessment(){
     var isBoardMonitoringControlEnvironment = getVal($('input[type=radio][name=is-board-monitoring-control-environment]:checked').val());
     var isBoardMonitoringRiskManagement = getVal($('input[type=radio][name=is-board-monitoring-risk-management]:checked').val());
     var haveAuditorsProvidedWrittenLetter = getVal($('input[type=radio][name=have-auditors-provided-written-letter]:checked').val());
-    control_environment = isCashFlowManagementCommunicated+isFounderCashBankAcctsSeparated+haveEstablishedPolicy+isPrincipleBusinessCommunicated+haveAccountingPoliciesEstablished+isControlCashManagementEstablished+haveOutsourcedInternalAudit+isStrategyDocumented+haveCFO+isBusinessUnitReporting+haveInternalAuditFunction+isExternalAuditorReportingToBoard+haveEstablishedSystemForRecordingSales+isInvestorAwareOfRiskManagement+haveFrameworkForEnvironmentalRisk+isBoardMonitoringControlEnvironment+isBoardMonitoringRiskManagement+haveAuditorsProvidedWrittenLetter;
+    
+    var control_environment = isCashFlowManagementCommunicated+isFounderCashBankAcctsSeparated+haveEstablishedPolicy+isPrincipleBusinessCommunicated+haveAccountingPoliciesEstablished+isControlCashManagementEstablished+haveOutsourcedInternalAudit+isStrategyDocumented+haveCFO+isBusinessUnitReporting+haveInternalAuditFunction+isExternalAuditorReportingToBoard+haveEstablishedSystemForRecordingSales+isInvestorAwareOfRiskManagement+haveFrameworkForEnvironmentalRisk+isBoardMonitoringControlEnvironment+isBoardMonitoringRiskManagement+haveAuditorsProvidedWrittenLetter;
     return control_environment;
 } 
 //Transparency and Disclosure
@@ -79,7 +82,8 @@ function getTransparencyAndDisclosureAssessment(){
     var isFinancialStatementApprovedByShareholder = getVal($('input[type=radio][name=is-financial-statement-approved-by-shareholder]:checked').val());
     var isNoFinancialInformationDisclosed = getVal($('input[type=radio][name=is-non-financial-information-disclosed]:checked').val());
     var haveDisclosureIncludedRegulatedPartyTransactions = getVal($('input[type=radio][name=have-disclosure-included-regulated-party-transactions]:checked').val());
-    transparency_disclosure = isFinancialAccountReconciled+isFounderAwareOfBankAcctReconciliation+haveFounderReceivedConsistentFinancialInformation+isPrincipleOfBusinessCommunicated+isKeyDecisionReportedToStaff+isFinancialStatementAudited+isGovernanceInformationCommunicated+isAdvisorAwareOfPerformance+isFinancialStatementAuditedByAuditingFirm+isFinancialStatementStandardized+isAnnualReportEnvironmentalProduced+isFinancialStatementApprovedByShareholder+isNoFinancialInformationDisclosed+haveDisclosureIncludedRegulatedPartyTransactions;
+    
+    var transparency_disclosure = isFinancialAccountReconciled+isFounderAwareOfBankAcctReconciliation+haveFounderReceivedConsistentFinancialInformation+isPrincipleOfBusinessCommunicated+isKeyDecisionReportedToStaff+isFinancialStatementAudited+isGovernanceInformationCommunicated+isAdvisorAwareOfPerformance+isFinancialStatementAuditedByAuditingFirm+isFinancialStatementStandardized+isAnnualReportEnvironmentalProduced+isFinancialStatementApprovedByShareholder+isNoFinancialInformationDisclosed+haveDisclosureIncludedRegulatedPartyTransactions;
     return transparency_disclosure;
 }
 //Ownership
@@ -103,7 +107,8 @@ function getOwnershipAssessment(){
     var isShareholderUnderstandingPolicy = getVal($('input[type=radio][name=have-charter]:checked').val());
     var isBoardMonitorRiskManagement = getVal($('input[type=radio][name=have-charter]:checked').val());
     var haveMechanismForAddressingIssues = getVal($('input[type=radio][name=have-charter]:checked').val());
-    ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+isBoardMonitorRiskManagement+haveMechanismForAddressingIssues;
+    
+    var ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+isBoardMonitorRiskManagement+haveMechanismForAddressingIssues;
     return ownership;
  
 })
