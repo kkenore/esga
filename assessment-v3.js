@@ -104,10 +104,12 @@ function getOwnershipAssessment(){
     var haveMechanismForResolvingDisputes = getVal($('input[type=radio][name=have-mechanism-for-resolving-disputes]:checked').val());
     var havePolicyForMinorityShareholder = getVal($('input[type=radio][name=have-policy-for-minority-shareholder]:checked').val());
     var isShareholderUnderstandingPolicy = getVal($('input[type=radio][name=is-shareholder-understanding-policy]:checked').val());
-    var isBoardMonitorRiskManagement = getVal($('input[type=radio][name=is-board-monitor-risk-management]:checked').val());
+    //var isBoardMonitorRiskManagement = getVal($('input[type=radio][name=is-board-monitor-risk-management]:checked').val());
     var haveMechanismForAddressingIssues = getVal($('input[type=radio][name=have-mechanism-for-addressing-issues]:checked').val());
     
-    var ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+isBoardMonitorRiskManagement+haveMechanismForAddressingIssues;
+    //var ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+isBoardMonitorRiskManagement+haveMechanismForAddressingIssues;
+    var ownership = haveShareholderAgreement+isFounderRoleEstablished+isBeneficialOwnershipDisclosed+isAGMHeld+haveDividendPolicies+hasEquitableTreatmentAllShareholders+haveClearCommunicationWithShareholders+haveDistinctionRolesFounderFamilyManager+isFamiltySuccessionInPlace+haveKeyDecisionInAnnualShareholderMeeting+isRightOfPartnerEstablished+havePolicyToRegulateFamilyBenefit+isShareholderUpdatedOnResults+haveMechanismForResolvingDisputes+havePolicyForMinorityShareholder+isShareholderUnderstandingPolicy+haveMechanismForAddressingIssues;	
+	
     return ownership;
  
 }
